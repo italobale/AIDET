@@ -1,62 +1,103 @@
-# This file may be used to create an environment using:
-# $ conda create --name <env> --file <this file>
-# platform: osx-arm64
-_py-xgboost-mutex=2.0=cpu_0
-appdirs=1.4.4=pyh9f0ad1d_0
-brotlipy=0.7.0=py39h02fc5c5_1005
-bzip2=1.0.8=h3422bc3_4
-ca-certificates=2022.12.7=h4653dfc_0
-certifi=2022.12.7=pyhd8ed1ab_0
-cffi=1.15.1=py39h7e6b969_3
-charset-normalizer=2.1.1=pyhd8ed1ab_0
-click=8.1.3=unix_pyhd8ed1ab_2
-cryptography=39.0.1=py39he2a39a8_0
-flask=2.2.2=pyhd8ed1ab_0
-idna=3.4=pyhd8ed1ab_0
-importlib-metadata=6.0.0=pyha770c72_0
-itsdangerous=2.1.2=pyhd8ed1ab_0
-jinja2=3.1.2=pyhd8ed1ab_1
-joblib=1.2.0=pyhd8ed1ab_0
-libblas=3.9.0=16_osxarm64_openblas
-libcblas=3.9.0=16_osxarm64_openblas
-libcxx=14.0.6=h2692d47_0
-libffi=3.4.2=h3422bc3_5
-libgfortran=5.0.0=11_3_0_hd922786_27
-libgfortran5=11.3.0=hdaf2cc0_27
-liblapack=3.9.0=16_osxarm64_openblas
-libopenblas=0.3.21=openmp_hc731615_3
-libsqlite=3.40.0=h76d750c_0
-libxgboost=1.7.1=cpu_h13cf1d8_0
-libzlib=1.2.13=h03a7124_4
-llvm-openmp=15.0.7=h7cfbb63_0
-markupsafe=2.1.2=py39h02fc5c5_0
-ncurses=6.3=h07bb92c_1
-numpy=1.24.2=py39hff61c6a_0
-openssl=3.0.8=h03a7124_0
-packaging=23.0=pyhd8ed1ab_0
-pandas=1.5.3=py39hde7b980_0
-pip=23.0=pyhd8ed1ab_0
-pooch=1.6.0=pyhd8ed1ab_0
-py-xgboost=1.7.1=cpu_py39h6861412_0
-pycparser=2.21=pyhd8ed1ab_0
-pyopenssl=23.0.0=pyhd8ed1ab_0
-pysocks=1.7.1=pyha2e5f31_6
-python=3.9.16=hea58f1e_0_cpython
-python-dateutil=2.8.2=pyhd8ed1ab_0
-python_abi=3.9=3_cp39
-pytz=2022.7.1=pyhd8ed1ab_0
-readline=8.1.2=h46ed386_0
-requests=2.28.2=pyhd8ed1ab_0
-scikit-learn=1.2.1=py39h57c6424_0
-scipy=1.10.0=py39h18313fe_2
-setuptools=67.1.0=pyhd8ed1ab_0
-six=1.16.0=pyh6c4a22f_0
-threadpoolctl=3.1.0=pyh8a188c0_0
-tk=8.6.12=he1e0b03_0
-tzdata=2022g=h191b570_0
-urllib3=1.26.14=pyhd8ed1ab_0
-werkzeug=2.2.2=pyhd8ed1ab_0
-wheel=0.38.4=pyhd8ed1ab_0
-xgboost=1.7.1=cpu_py39h2fb42d7_0
-xz=5.2.6=h57fd34a_0
-zipp=3.13.0=pyhd8ed1ab_0
+aiobotocore==2.2.0
+aiohttp-retry==2.4.6
+aioitertools==0.10.0
+appdirs==1.4.4
+asyncssh==2.11.0
+atpublic==3.0.1
+bcrypt==3.2.0
+boto3==1.21.21
+botocore==1.24.21
+brotlipy @ file:///Users/runner/miniforge3/conda-bld/brotlipy_1666764778428/work
+certifi==2022.12.7
+cffi @ file:///Users/runner/miniforge3/conda-bld/cffi_1671179432479/work
+cfgv==3.3.1
+charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1661170624537/work
+click @ file:///home/conda/feedstock_root/build_artifacts/click_1666798198223/work
+commonmark==0.9.1
+configobj==5.0.6
+cryptography @ file:///Users/runner/miniforge3/conda-bld/cryptography-split_1675828776259/work
+dictdiffer==0.9.0
+diskcache==5.4.0
+distlib==0.3.4
+distro==1.7.0
+dpath==2.0.6
+dulwich==0.20.43
+dvc==2.11.0
+dvc-data==0.0.2
+dvc-objects==0.0.2
+dvc-render==0.0.5
+dvclive==0.7.3
+filelock==3.6.0
+Flask @ file:///home/conda/feedstock_root/build_artifacts/flask_1660054669620/work
+flatten-dict==0.4.2
+flufl.lock==7.0
+fsspec==2022.3.0
+ftfy==6.1.1
+funcy==1.17
+future==0.18.2
+gitdb==4.0.9
+GitPython==3.1.27
+grandalf==0.6
+identify==2.4.12
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1663625384323/work
+importlib-metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1672612343532/work
+itsdangerous @ file:///home/conda/feedstock_root/build_artifacts/itsdangerous_1648147185463/work
+Jinja2 @ file:///home/conda/feedstock_root/build_artifacts/jinja2_1654302431367/work
+jmespath==1.0.0
+joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1663332044897/work
+mailchecker==4.1.14
+MarkupSafe @ file:///Users/runner/miniforge3/conda-bld/markupsafe_1674135926863/work
+nanotime==0.5.2
+networkx==2.7.1
+nodeenv==1.6.0
+numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1675642800940/work
+packaging==21.3
+pandas==1.5.3
+pathspec==0.9.0
+phonenumbers==8.12.46
+pipenv==2022.12.19
+platformdirs==2.5.1
+pooch @ file:///home/conda/feedstock_root/build_artifacts/pooch_1643032624649/work
+pre-commit==2.19.0
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1636257122734/work
+pydot==1.4.2
+pygit2==1.9.1
+pygtrie==2.4.2
+pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1672659226110/work
+pyparsing==3.0.7
+PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1661604839144/work
+python-benedict==0.25.0
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1626286286081/work
+python-fsutil==0.6.0
+python-slugify==6.1.1
+pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1673864280276/work
+PyYAML==6.0
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1673863902341/work
+rich==12.2.0
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+s3fs==2022.3.0
+s3transfer==0.5.2
+scikit-learn @ file:///Users/runner/miniforge3/conda-bld/scikit-learn_1674599098664/work
+scipy==1.10.0
+scmrepo==0.0.24
+shortuuid==1.0.8
+shtab==1.5.3
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+smmap==5.0.0
+sshfs==2022.6.0
+tabulate==0.8.9
+text-unidecode==1.3
+threadpoolctl @ file:///home/conda/feedstock_root/build_artifacts/threadpoolctl_1643647933166/work
+toml==0.10.2
+tqdm==4.64.0
+typing_extensions==4.1.1
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1673452138552/work
+virtualenv==20.14.0
+virtualenv-clone==0.5.7
+voluptuous==0.13.0
+Werkzeug @ file:///home/conda/feedstock_root/build_artifacts/werkzeug_1660053523487/work
+xgboost==1.7.1
+xmltodict==0.12.0
+zc.lockfile==2.0
+zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1675982654259/work
