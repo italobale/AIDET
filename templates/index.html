@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <div class="w3-content" style="max-width:1532px;">
+
+    <div class="w3-card w3-col m6 w3-margin-top w3-margin-right" id="inform">
+
+      <div class="w3-container w3-margin-top w3-margin-bottom">
+        <h3>Evaluate Single Diamond</h3>
+        
+        <form action="/result" method="POST">
+
+          <div class="w3-row-padding w3-margin-bottom">
+            <div class="w3-third">
+              <label for="shape"><i class="fa fa-diamond"></i> Shape</label>
+              <select class="w3-select" id="shape" name="shape">
+                <option value="ROUND" selected>ROUND</option>
+                <option value="PRINCESS">PRINCESS</option>
+                <option value="CUSHION">CUSHION</option>
+                <option value="OVAL">OVAL</option>
+                <option value="EMERALD">EMERALD</option>
+                <option value="HEART">HEART</option>
+                <option value="PEAR">PEAR</option>
+                <option value="MARQUISE">MARQUISE</option>
+                <option value="ASSCHER">ASSCHER</option>
+                <option value="RADIANT">RADIANT</option>
+                <option value="DROP">DROP</option>
+                <option value="BAGUETTE">BAGUETTE</option>
+                <option value="TRILLIANT">TRILLIANT</option>
+              </select>
+            </div>
+            <div class="w3-third">
+              <label for="carat"><i class="fa fa-balance-scale"></i> Carats</label>
+              <input class="w3-input w3-border" name="carat" type="number" step=".01" value="1.0" placeholder="1.0">
+            </div>
+            <div class="w3-third">
+              <br>
+              <br>
+              <br>
+            </div>
+            <div class="w3-third">
+              <label for="cut"><i class="fa fa-diamond"></i> Cut</label>
+              <select class="w3-select" id="cut" name="cut">
+                <option value="EX" selected>Ideal/Excellent</option>
+                <option value="VG">Very Good</option>
+                <option value="GO">Good</option>
+                <option value="FA">Fair</option>
+              </select>
+            </div>
+            <div class="w3-third">
+              <label for="color"><i class="fa fa-diamond"></i> Color</label>
+              <select class="w3-select" id="color" name="color">
+                <option value="D" selected>D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+                <option value="J">J</option>
+                <option value="K">K</option>
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="N">N</option>
+                <option value="O">O</option>
+                <option value="P">P</option>
+                <option value="Q">Q</option>
+                <option value="R">R</option>
+                <option value="S">S</option>
+                <option value="T">T</option>
+                <option value="U">U</option>
+                <option value="V">V</option>
+                <option value="W">W</option>
+                <option value="X">X</option>
+                <option value="Y">Y</option>
+                <option value="Z">Z</option>
+              </select>
+            </div>
+            <div class="w3-third">
+              <label for="clarity"><i class="fa fa-diamond"></i> Clarity</label>
+              <select class="w3-select" id="clarity" name="clarity">
+                <option value="FL" selected>FL</option>
+                <option value="IF">IF</option>
+                <option value="VVS1">VVS1</option>
+                <option value="VVS2">VVS2</option>
+                <option value="VS1">VS1</option>
+                <option value="VS2">VS2</option>
+                <option value="SI1">SI1</option>
+                <option value="SI2">SI2</option>
+                <option value="I1">I1</option>
+                <option value="I2">I2</option>
+                <option value="I3">I3</option>
+              </select>             
+            </div>
+            <div class="w3-third">
+              <label><i class="fa fa-diamond"></i> Width (mm)</label>
+              <input class="w3-input w3-border" name="width" type="number" step=".01" value="5.0" placeholder="5.0">
+            </div>
+            <div class="w3-third">
+              <label><i class="fa fa-diamond"></i> Length (mm)</label>
+              <input class="w3-input w3-border" name="length" type="number" step=".01" value="5.0" placeholder="5.0">
+            </div>
+            <div class="w3-third">
+              <label><i class="fa fa-diamond"></i> Height (mm)</label>
+              <input class="w3-input w3-border" name="height" type="number" step=".01" value="5.0" placeholder="5.0">
+            </div>
+            <div class="w3-third">
+              <label><i class="fa fa-diamond"></i> Depth (%)</label>
+              <input class="w3-input w3-border" name="depth" type="number" step=".1" value="50.0" placeholder="50.0">
+            </div>
+            <div class="w3-third">
+              <label><i class="fa fa-diamond"></i> Table (%)</label>
+              <input class="w3-input w3-border" name="table" type="number" step=".1" value="70.0" placeholder="70.0">
+            </div>
+            <div class="w3-third">
+              <br>
+              <br>
+              <br>
+            </div>
+            <div class="w3-third">
+              <label for="fluorescence"><i class="fa fa-diamond"></i> Fluorescence</label>
+              <select class="w3-select" id="fluorescence" name="fluorescence">
+                <option value="NO" selected>NONE</option>
+                <option value="FA">Faint</option>
+                <option value="M">Medium</option>
+                <option value="ST">Strong</option>
+                <option value="VS">Very Strong</option>
+              </select>
+            </div>
+            <div class="w3-third">
+              <label for="polish"><i class="fa fa-diamond"></i> Polish</label>
+              <select class="w3-select" id="polish" name="polish">
+                <option value="EX" selected>Ideal/Excellent</option>
+                <option value="VG">Very Good</option>
+                <option value="GO">Good</option>
+                <option value="FA">Fair</option>
+              </select>
+            </div>
+            <div class="w3-third">
+              <label for="symmetry"><i class="fa fa-diamond"></i> Symmetry</label>
+              <select class="w3-select" id="symmetry" name="symmetry">
+                <option value="EX" selected>Ideal/Excellent</option>
+                <option value="VG">Very Good</option>
+                <option value="GO">Good</option>
+                <option value="FA">Fair</option>
+              </select>
+            </div>
+            <div class="w3-third">
+              <label for="certificate"><i class="fa fa-certificate"></i> Certificate</label>
+              <select class="w3-select" id="certificate" name="certificate">
+                <option value="GIA" selected>GIA</option>
+                <option value="AGS">AGS</option>
+                <option value="EGL">EGL</option>
+                <option value="IGI">IGI</option>
+                <option value="HRD">HRD</option>
+                <option value="NONE">NONE</option>
+              </select>
+            </div>
+            <div class="w3-third">
+              <br>
+              <br>
+              <br>
+            </div>
+            <div class="w3-third">
+              <br>
+              <br>
+              <br>
+            </div>
+            <div class="w3-half">
+              <label><i class="fa fa-calculator"></i> Price</label>
+              <button class="w3-button w3-block w3-black" type="submit" value="Estimate Price">Estimate Price</button>
+            </div>
+        </div>
+            
+        </form>
+
+    </div>
+  </div>
+
+{% endblock %}
