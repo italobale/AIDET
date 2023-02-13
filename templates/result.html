@@ -188,6 +188,20 @@
   <div class="w3-card w3-col m6 w3-margin-top" id="price">
     <div class="w3-container w3-margin-top w3-margin-bottom">
       <h3>Estimated Sale Price: {{preds}} EUR</h3>
+      <svg width="500" height="80">
+        <rect x="0"  y="30" rx="20" ry="20" width="400" height="30" style="fill:red"/>
+        <rect x="50" y="30" rx="20" ry="20" width="300" height="30" style="fill:orange"/>
+        <rect x="100" y="30" rx="20" ry="20" width="200" height="30" style="fill:lightgrey"/>
+        <text text-anchor="middle" x="60"  y="20" fill="orange">{{(preds - preds*0.25)|round(-2)|int}}</text>
+        <text text-anchor="middle" x="200" y="20">{{preds}}</text>
+        <text text-anchor="middle" x="350" y="20" fill="orange">{{(preds + preds*0.25)|round(-2)|int}}</text>
+        <text text-anchor="middle" x="130" y="20" fill="lightgrey">{{(preds - preds*0.1)|round(-2)|int}}</text>
+        <text text-anchor="middle" x="280" y="20" fill="lightgrey">{{(preds + preds*0.1)|round(-2)|int}}</text>
+        <text text-anchor="middle" x="200" y="50" fill="black">Fair</text>
+        <text text-anchor="middle" x="370" y="50" fill="white">Hi</text>
+        <text text-anchor="middle" x="30" y="50" fill="white">Lo</text>
+        Sorry, your browser does not support inline SVG.
+      </svg>
     </div>
 
   </div>
