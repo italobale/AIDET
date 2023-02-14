@@ -3,9 +3,8 @@ import numpy as np
 from flask import Flask, request, render_template
 import pandas as pd
 import xgboost as xgb
+# from dash import Dash, html
 
-
-app = Flask(__name__)
 
 OUTPUT_PATH = './output/'
 
@@ -125,6 +124,32 @@ try:
 except Exception:
     print("Model not found!")
 
+# df = pd.read_csv('https://gist.githubusercontent.com/chriddyp/c78bf172206ce24f77d6363a2d754b59/raw/c353e8ef842413cae56ae3920b8fd78468aa4cb2/usa-agricultural-exports-2011.csv')
+# 
+# def generate_table(dataframe, max_rows=10):
+#     return html.Table([
+#         html.Thead(
+#             html.Tr([html.Th(col) for col in dataframe.columns])
+#         ),
+#         html.Tbody([
+#             html.Tr([
+#                 html.Td(dataframe.iloc[i][col]) for col in dataframe.columns
+#             ]) for i in range(min(len(dataframe), max_rows))
+#         ])
+#     ])
+# 
+# 
+# 
+# app = Flask(__name__)
+# app_dash = Dash(__name__)
+# 
+# app_dash.layout = html.Div([
+#     html.H4(children='US Agriculture Exports (2011)'),
+#     generate_table(df)
+# ])
+
+
+app = Flask(__name__)
 
 @app.route('/')
 @app.route('/index')
